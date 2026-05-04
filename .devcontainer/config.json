@@ -1,24 +1,5 @@
 {
   "inbounds": [
-//    {
-//      "port": 443,
-//      "protocol": "vless",
-//      "settings": {
-//        "clients": [
-//          {
-//            "id": "550e8400-e29b-41d4-a716-446655440000"
-//          }
-//        ],
-//        "decryption": "none"
-//      },
-//      "streamSettings": {
-//        "network": "xhttp",
-//        "xhttpSettings": {
-//          "mode": "packet-up",
-//          "path": "/"
-//        }
-//      }
-//    },
     {
       "port": 443,
       "protocol": "vless",
@@ -31,8 +12,9 @@
         "decryption": "none"
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
+        "network": "xhttp",
+        "xhttpSettings": {
+          "mode": "packet-up",
           "path": "/"
         }
       }
